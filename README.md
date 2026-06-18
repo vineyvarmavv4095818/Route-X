@@ -1,4 +1,4 @@
-# Smart Route Planner
+# Route-X
 
 A DSA-based Smart Route Planner built using Flask and Dijkstra Algorithm.
 
