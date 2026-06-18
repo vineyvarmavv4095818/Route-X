@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Smart Route Planner</title>
+
+    <link rel="stylesheet"href="{{ url_for('static',filename='style.css') }}">
+    <link rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Smart Route Planner</h1>
+        <p class="tagline">
+            <i class="fa-solid fa-location-arrow"></i>
+            Find the shortest path, smarter and faster.
+        </p>
+
+<form action="/route" method="POST">
+
+
+<select name="source" class="src">
+
+{% for city in cities %}
+
+<option
+{% if city == selected_source %}
+selected
+{% endif %}
+>
+
+{{city}}
+
+</option>
+
+{% endfor %}
+
+</select>
+
+
+<select name="destination" class="dest">
+
+{% for city in cities %}
+
+<option
+
+{% if city == selected_destination %}
+selected
+{% endif %}
+
+>
+
+{{city}}
+
+</option>
+
+{% endfor %}
+
+</select>
+
+
+
+
+
+<select name="speed">
+
+    <option value="40"
+
+        {% if selected_speed == 40 %}
+        selected
+        {% endif %}
+
+    >
+        🚜 40 km/hr
+    </option>
+
+
+    <option value="60"
+
+        {% if selected_speed == 60 %}
+        selected
+        {% endif %}
+
+    >
+        🚗 60 km/hr
+    </option>
+
+
+    <option value="80"
+
+        {% if selected_speed == 80 %}
+        selected
+        {% endif %}
+
+    >
+        🛣 80 km/hr
+    </option>
+
+
+    <option value="100"
+
+        {% if selected_speed == 100 %}
+        selected
+        {% endif %}
+
+    >
+        🏎 100 km/hr
+    </option>
+
+</select>
+
+
+    <button type="submit" class="sub">
+        <i class="fa-solid fa-magnifying-glass"></i>
+        Find Route
+    </button>
+
+</form>
+
+{% if result %}
+
+<div class="result">
+
+    <h2>Route Information:</h2>
+
+    <p>
+        <strong>Path:</strong>
+        {{ result.path }}
+    </p>
+
+    <p>
+        <strong>Distance:</strong>
+        {{ result.distance }} km
+    </p>
+
+    <p>
+        <strong>Average Speed :</strong>
+        {{result.speed}} km/hr
+    </p>
+
+    <p>
+        <strong>
+            Estimated Time :
+            <i class="fa-solid fa-clock"></i>
+        </strong>
+        {{result.time}}
+    </p>
+
+</div>
+
+{% endif %}
+
+    </div>
+
+</body>
+</html>

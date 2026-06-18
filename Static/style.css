@@ -1,0 +1,120 @@
+html,
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+}
+body {
+    background: linear-gradient(
+        135deg,
+        #0f172a,
+        #1e293b,
+        #0f172a
+    );
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    /* background: linear-gradient(135deg, #0f172a, #b4b8c4); */
+    
+    color:white;
+
+    font-family:Arial;
+
+    text-align:center;
+
+    /* margin-top:10px; */
+}
+
+h1{
+    text-align: center;
+    width: auto;
+    font-size: 50px;
+    font-family: serif;
+    /* background: linear-gradient(90deg, #3b82f6, #06b6d4); */
+    /* background: linear-gradient(90deg, #8b5cf6, #ec4899); */
+    /* background: linear-gradient(90deg, #22c55e, #14b8a6); */
+    background: linear-gradient(90deg, #f97316, #ef4444);
+
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    -webkit-text-fill-color: transparent;
+
+    display: inline-block;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.tagline {
+    margin: 10px 0px;
+    font-family: serif;
+    font-size: 20px;
+    color: rgb(192, 190, 190);
+}
+
+form {
+    margin-top: 30px;
+}
+.container{
+
+    width:500px;
+    height: 100%;
+    margin:auto;
+}
+
+select,
+button{
+    padding:10px;
+    margin:10px;
+    border:none;
+    font-size:16px;
+    font-family:serif;
+    font-weight: 600;
+    border-radius: 10px;
+    background: linear-gradient(135deg, rgb(0, 37, 248), rgb(143, 182, 207));
+    color: rgb(29, 29, 29);
+}
+.sub {
+    background: linear-gradient(135deg, rgb(119, 15, 15), rgb(199, 132, 8));
+    border-radius: 10px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: 0.3s;
+    color: antiquewhite;
+}
+
+button:hover{
+    transform: scale(1.05);
+}
+.result{
+    margin-top:30px;
+    padding:20px;
+    border-radius:20px;
+    background: #0b1320;
+    font-family: serif;
+}
+
+.result h2 {
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    background: linear-gradient(90deg, #285177, #5faaff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.result p {
+    font-size: 20px;
+    color: rgb(117, 216, 255);
+}
+
+
+
+.result strong{
+    background: linear-gradient(90deg, #ff6b02, #fc5353);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
