@@ -3,40 +3,54 @@
         "Jaipur": 280,
         "Agra": 230,
         "Chandigarh": 250,
-        "Lucknow": 550
+        "Lucknow": 550,
+        "Dehradun": 250
     },
     "Jaipur": {
         "Delhi": 280,
         "Ajmer": 135,
         "Kota": 250,
-        "Udaipur": 395
+        "Udaipur": 395,
+        "Jodhpur": 350
     },
     "Ajmer": {
         "Jaipur": 135,
-        "Jodhpur": 205
+        "Kota": 200,
+        "Jodhpur": 205,
+        "Udaipur": 270
     },
     "Kota": {
         "Jaipur": 250,
+        "Ajmer": 200,
+        "Udaipur": 285,
         "Indore": 330,
         "Bhopal": 340
     },
     "Udaipur": {
         "Jaipur": 395,
-        "Ahmedabad": 260
+        "Ajmer": 270,
+        "Kota": 285,
+        "Ahmedabad": 260,
+        "Jodhpur": 250
     },
     "Jodhpur": {
+        "Jaipur": 350,
         "Ajmer": 205,
+        "Udaipur": 250,
         "Jaisalmer": 285
+    },
+    "Jaisalmer": {
+        "Jodhpur": 285
     },
     "Agra": {
         "Delhi": 230,
         "Gwalior": 120,
-        "Lucknow": 335
+        "Lucknow": 335,
+        "Kanpur": 290
     },
-    "Chandigarh": {
-        "Delhi": 250,
-        "Amritsar": 230,
-        "Shimla": 115
+    "Gwalior": {
+        "Agra": 120,
+        "Bhopal": 420
     },
     "Lucknow": {
         "Delhi": 550,
@@ -46,10 +60,16 @@
     },
     "Kanpur": {
         "Lucknow": 90,
-        "Prayagraj": 210
+        "Prayagraj": 210,
+        "Agra": 290
+    },
+    "Prayagraj": {
+        "Kanpur": 210,
+        "Varanasi": 120
     },
     "Varanasi": {
         "Lucknow": 320,
+        "Prayagraj": 120,
         "Patna": 260
     },
     "Patna": {
@@ -69,55 +89,78 @@
         "Raipur": 290,
         "Indore": 445,
         "Hyderabad": 500,
-        "Bhopal": 350
+        "Bhopal": 350,
+        "Mumbai": 830
     },
     "Indore": {
         "Kota": 330,
         "Nagpur": 445,
         "Ahmedabad": 400,
-        "Mumbai": 585
+        "Mumbai": 585,
+        "Bhopal": 190
     },
     "Bhopal": {
-        "Kota": 340,
+        "Indore": 190,
         "Nagpur": 350,
+        "Kota": 340,
         "Gwalior": 420
     },
     "Ahmedabad": {
         "Udaipur": 260,
         "Indore": 400,
-        "Surat": 270
+        "Surat": 270,
+        "Vadodara": 110
+    },
+    "Vadodara": {
+        "Ahmedabad": 110,
+        "Surat": 150
     },
     "Surat": {
         "Ahmedabad": 270,
-        "Mumbai": 280
+        "Mumbai": 280,
+        "Vadodara": 150
     },
     "Mumbai": {
         "Surat": 280,
         "Pune": 150,
-        "Indore": 585
+        "Indore": 585,
+        "Nagpur": 830
     },
     "Pune": {
         "Mumbai": 150,
         "Hyderabad": 560,
-        "Goa": 450
+        "Goa": 450,
+        "Bengaluru": 840
+    },
+    "Goa": {
+        "Pune": 450,
+        "Mangaluru": 360
     },
     "Hyderabad": {
         "Nagpur": 500,
         "Pune": 560,
         "Bengaluru": 570,
-        "Visakhapatnam": 620
+        "Visakhapatnam": 620,
+        "Chennai": 630
     },
     "Bengaluru": {
         "Hyderabad": 570,
         "Chennai": 350,
-        "Mysuru": 145
+        "Mysuru": 145,
+        "Kochi": 550,
+        "Pune": 840
+    },
+    "Mysuru": {
+        "Bengaluru": 145
     },
     "Chennai": {
         "Bengaluru": 350,
-        "Kochi": 690
+        "Kochi": 690,
+        "Hyderabad": 630
     },
     "Kochi": {
         "Chennai": 690,
+        "Bengaluru": 550,
         "Thiruvananthapuram": 210
     },
     "Thiruvananthapuram": {
@@ -137,28 +180,35 @@
         "Hyderabad": 620
     },
     "Guwahati": {
-        "Kolkata": 1030
+        "Kolkata": 1030,
+        "Shillong": 100
+    },
+    "Shillong": {
+        "Guwahati": 100
+    },
+    "Chandigarh": {
+        "Delhi": 250,
+        "Amritsar": 230,
+        "Shimla": 115
     },
     "Amritsar": {
-        "Chandigarh": 230
+        "Chandigarh": 230,
+        "Jammu": 215
     },
     "Shimla": {
         "Chandigarh": 115
     },
-    "Gwalior": {
-        "Agra": 120,
-        "Bhopal": 420
+    "Jammu": {
+        "Amritsar": 215,
+        "Srinagar": 270
     },
-    "Prayagraj": {
-        "Kanpur": 210
+    "Srinagar": {
+        "Jammu": 270
     },
-    "Goa": {
-        "Pune": 450
+    "Dehradun": {
+        "Delhi": 250
     },
-    "Mysuru": {
-        "Bengaluru": 145
-    },
-    "Jaisalmer": {
-        "Jodhpur": 285
+    "Mangaluru": {
+        "Goa": 360
     }
 }
