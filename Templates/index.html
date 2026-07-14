@@ -13,59 +13,42 @@
 
     <div class="container">
 
-        <h1>Route-X</h1>
-        <p class="tagline">
-            <i class="fa-solid fa-location-arrow"></i>
-            Find the shortest path, smarter and faster.
-        </p>
+        <div class="app-name">
+            <h1>
+                <i class="fa-solid fa-paper-plane"></i>
+                Route-X</h1>
+            <span>Smart Route Planner</span>
+        </div>
+        <div class="tagline">
+            <p>
+                Find the shortest path,
+            </p>
+            <p>smarter and faster.</p>
+        </div>
 
 <form action="/route" method="POST">
 
+<div class="from">
+    <span>From:</span>
+    <select name="source">
 
-<select name="source" class="src">
+    {% for city in cities %}
 
-{% for city in cities %}
+    <option
+        {% if city == selected_source %}
+        selected
+        {% endif %}
+    >
 
-<option
-{% if city == selected_source %}
-selected
-{% endif %}
->
+    {{city}}
 
-{{city}}
+    </option>
 
-</option>
-
-{% endfor %}
-
-</select>
-
-
-<select name="destination" class="dest">
-
-{% for city in cities %}
-
-<option
-
-{% if city == selected_destination %}
-selected
-{% endif %}
-
->
-
-{{city}}
-
-</option>
-
-{% endfor %}
+    {% endfor %}
 
 </select>
 
-
-
-
-
-<select name="speed">
+<select name="speed" class="speed">
 
     <option value="40"
 
@@ -112,11 +95,38 @@ selected
 
 </select>
 
+</div>
+
+
+<div class="to">
+    <span>To:</span>
+    <select name="destination">
+
+    {% for city in cities %}
+
+    <option
+
+        {% if city == selected_destination %}
+        selected
+        {% endif %}
+    >
+
+    {{city}}
+
+    </option>
+
+    {% endfor %}
+
+    </select>
 
     <button type="submit" class="sub">
         <i class="fa-solid fa-magnifying-glass"></i>
         Find Route
     </button>
+</div>
+
+
+    
 
 </form>
 
@@ -126,28 +136,39 @@ selected
 
     <h2>Route Information:</h2>
 
-    <p>
+    <div class="path">
+        <i class="fa-solid fa-location-dot" style="color: rgb(152, 179, 0);"></i>
         <strong>Path:</strong>
+        <br>
         {{ result.path }}
-    </p>
+    </div>
 
-    <p>
-        <strong>Distance:</strong>
+    <div class="sub-result">
+
+    <div class="dat"><i class="fa-solid fa-road" style="color: rgb(152, 179, 0);"></i>
+        <br>
+        <strong>Total distance:</strong>
+        <br>
+        <br>
         {{ result.distance }} km
-    </p>
+    </div>
 
-    <p>
-        <strong>Average Speed :</strong>
+    <div class="dat"><i class="fa-solid fa-gauge-high" style="color: rgb(152, 179, 0);"></i>
+        <br>
+        <strong>Average Speed:</strong>
+        <br>
+        <br>
         {{result.speed}} km/hr
-    </p>
+    </div>
 
-    <p>
-        <strong>
-            Estimated Time :
-            <i class="fa-solid fa-clock"></i>
-        </strong>
+    <div class="dat"><i class="fa-regular fa-clock" style="color: rgb(152, 179, 0);"></i>
+        <br>
+        <strong>Estimated Time:</strong>
+        <br>
+        <br>
         {{result.time}}
-    </p>
+    </div>
+    </div>
 
 </div>
 

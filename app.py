@@ -130,7 +130,7 @@ def route():
 
     if path:
 
-        route_text = " → ".join(path)
+        route_text = " ➡ ".join(path)
 
         travel_time = estimate_time(total_distance, speed)
 
