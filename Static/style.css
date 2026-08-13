@@ -1,25 +1,12 @@
-/* html,
-body{
-    margin: 0;
-    padding: 0;
-    min-height: 110vh;
-} */
 body {
     background:
         linear-gradient(rgba(65, 65, 65, 0.3), rgba(65, 65, 65, 0.3)),
         url("img2.png");
     background-size: cover;
     background-repeat: no-repeat;
-
-    /* background: linear-gradient(135deg, #0f172a, #b4b8c4); */
-    
     color:white;
-
     font-family:Arial;
-
     text-align:center;
-
-    /* margin-top:10px; */
 }
 
 .app-name span{
@@ -33,21 +20,10 @@ body {
     text-align: center;
     width: auto;
     font-size: 35px;
-    font-family: serif;
-    /* background: linear-gradient(90deg, #3b82f6, #06b6d4); */
-    /* background: linear-gradient(90deg, #8b5cf6, #ec4899); */
-    /* background: linear-gradient(90deg, #22c55e, #14b8a6); */
-    /* background: linear-gradient(90deg, #000000, #000000);
-
-    -webkit-background-clip: text;
-    background-clip: text;
-
-    -webkit-text-fill-color: transparent; */
-
+    font-family: 'Carter One';
     color: black;
-
     display: inline-block;
-    margin-top: 20px;
+    margin-top: 10px;
     margin-bottom: 2px;
 }
 
@@ -142,7 +118,6 @@ button:hover{
 }
 .result{
     text-align: center;
-    /* width: 500px; */
     margin-top:30px;
     padding:10px;
     border-radius:20px;
@@ -163,8 +138,6 @@ button:hover{
     color: rgb(169, 179, 184);
 }
 
-
-
 .result strong{
     background: linear-gradient(90deg, rgb(195, 255, 31), rgb(152, 179, 0));
     -webkit-background-clip: text;
@@ -173,17 +146,11 @@ button:hover{
     font-size: 18px;
 }
 
-
 .src p{
-
     display:block;
-
     font-size:16px;
-
     font-weight:600;
-
     color:#94a3b8;
-
 }
 
 .path {
